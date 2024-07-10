@@ -92,4 +92,4 @@ The system successfully provides recommendations for fashion items based on visu
 The Fashion Recommendation System effectively uses image processing and machine learning techniques to recommend fashion items. By leveraging the pre-trained ResNet50 neural network for feature extraction and cosine similarity for similarity measurement, the system offers accurate and relevant recommendations, demonstrating the potential for improving online shopping experiences.
 
 ## License
-  This project is licensed under the MIT Licens
+  This project is licensed under the MIT License.
