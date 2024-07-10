@@ -27,7 +27,7 @@ The motivation behind this project stems from the need to improve the online sho
 
 ## Key Objectives
 - **Develop a feature extraction model**: Utilize a pre-trained ResNet50 neural network to extract features from fashion item images.
-- **Implement a recommendation algorithm**: Use cosine similarity to find and suggest visually similar fashion items.
+- **Implement a recommendation algorithm**: Utilize k-nearest neighbors algorithm to recommend five visually similar products based on extracted features.
 - **Create an interactive web interface**: Build a user-friendly interface with Streamlit for users to select images and view recommendations.
 - **Optimize performance and accuracy**: Ensure the system provides accurate and relevant recommendations in a timely manner.
 
@@ -70,18 +70,18 @@ This will start the Streamlit server, and you can interact with the application 
 ## Methodology
 
 The project follows these key steps:
+   
+    1.Data Preparation: Collected a large dataset of fashion product images from the e-commerce website.
+   
+    2.Model Selection: Used the pre-trained ResNet50 model for feature extraction due to its robust performance in image recognition tasks.
     
-    1.Data Collection: Gather images of fashion items along with their metadata.
+    3.Feature Extraction: Implemented a feature extraction pipeline to generate embeddings for each product image.
     
-    2.Data Preprocessing: Clean and prepare the data, including resizing images and extracting relevant details.
+    4.Embedding Storage: Stored the generated embeddings and corresponding filenames using pickle.
     
-    3.Feature Extraction: Use a pre-trained ResNet50 model to extract feature vectors from the images.
+    5.Recommendation System: Utilized the k-nearest neighbors algorithm to find and recommend five similar products based on the extracted features.
     
-    4.Similarity Measurement: Implement cosine similarity to measure the similarity between the feature vectors.
-    
-    5.Model Training: Train a NearestNeighbors model using the extracted features.
-    
-    6.Web Interface Development: Develop an interactive interface using Streamlit for users to select images and view recommendations.
+    6.Integration: Developed a Streamlit application to upload an image, extract its features, and display the recommended products.
 
 ## Results
 
@@ -89,7 +89,7 @@ The system successfully provides recommendations for fashion items based on visu
 
 ## Conclusion
 
-The Fashion Recommendation System effectively uses image processing and machine learning techniques to recommend fashion items. By leveraging the pre-trained ResNet50 neural network for feature extraction and cosine similarity for similarity measurement, the system offers accurate and relevant recommendations, demonstrating the potential for improving online shopping experiences.
+The Fashion Recommendation System effectively uses image processing and machine learning techniques to recommend fashion items. By leveraging the pre-trained ResNet50 neural network for feature extraction and k-nearest neighbors algorithm for similarity measurement, the system offers accurate and relevant recommendations, demonstrating the potential for improving online shopping experiences.
 
 ## License
   This project is licensed under the MIT License.
