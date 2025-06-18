@@ -54,8 +54,8 @@ def display_images_with_products(details_df, images_df, items_per_page=54, num_c
 
 # Load CSV files
 
-details_csv_path = 'DivyaTejaVenkat29/Fashion-Recommendation-System/fashion recommendation system/data/details.csv'
-images_csv_path = 'DivyaTejaVenkat29/Fashion-Recommendation-System/fashion recommendation system/data/images.csv'
+details_csv_path = 'fashion recommendation system/data/details.csv'
+images_csv_path = 'fashion recommendation system/data/images.csv'
 
 details_df, images_df = read_data(details_csv_path, images_csv_path)
 
